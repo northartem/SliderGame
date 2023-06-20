@@ -33,9 +33,7 @@ struct UISliderRepresentation: UIViewRepresentable {
 
 //MARK: - Coordinator
 extension UISliderRepresentation {
-    
     class Coordinator: NSObject {
-        
         @Binding var value: Double
         
         init(value: Binding<Double>) {

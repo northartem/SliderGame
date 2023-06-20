@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		882B3D292A4153930056A952 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B3D282A4153930056A952 /* UISliderRepresentation.swift */; };
+		88C5DB032A41BA160022275D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5DB022A41BA160022275D /* ButtonView.swift */; };
 		88DC956E2A408EBC003BE8CC /* SliderGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC956D2A408EBC003BE8CC /* SliderGameApp.swift */; };
 		88DC95702A408EBC003BE8CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC956F2A408EBC003BE8CC /* ContentView.swift */; };
 		88DC95722A408EBD003BE8CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DC95712A408EBD003BE8CC /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		882B3D282A4153930056A952 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
+		88C5DB022A41BA160022275D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		88DC956A2A408EBC003BE8CC /* SliderGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DC956D2A408EBC003BE8CC /* SliderGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGameApp.swift; sourceTree = "<group>"; };
 		88DC956F2A408EBC003BE8CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				88DC956D2A408EBC003BE8CC /* SliderGameApp.swift */,
 				88DC956F2A408EBC003BE8CC /* ContentView.swift */,
+				88C5DB022A41BA160022275D /* ButtonView.swift */,
 				882B3D282A4153930056A952 /* UISliderRepresentation.swift */,
 				88DC95712A408EBD003BE8CC /* Assets.xcassets */,
 				88DC95732A408EBD003BE8CC /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				882B3D292A4153930056A952 /* UISliderRepresentation.swift in Sources */,
 				88DC95702A408EBC003BE8CC /* ContentView.swift in Sources */,
+				88C5DB032A41BA160022275D /* ButtonView.swift in Sources */,
 				88DC956E2A408EBC003BE8CC /* SliderGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

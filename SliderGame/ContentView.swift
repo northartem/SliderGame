@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
+            Text("Move the slider near at: \(targetValue)")
             HStack {
                 Text("0")
                 UISliderRepresentation(
@@ -25,23 +25,25 @@ struct ContentView: View {
                 )
                 Text("100")
             }
-            .padding(.bottom, 20)
-            Button("Проверь меня") {
-                alert.toggle()
-            }
-            .padding(.bottom, 10)
-            .alert("Твой счет", isPresented: $alert, actions: {}) {
-                Text(computeScore().formatted())
-            }
-            Button("Начать заново") {
-                targetValue = Int.random(in: 0...100)
-                currentValue = 50
+            HStack {
+                ButtonView(title: "Play again", color: .blue) {
+                    targetValue = Int.random(in: 0...100)
+                    currentValue = 50
+                }
+                Spacer()
+                ButtonView(title: "Check scores", color: .green) {
+                    alert.toggle()
+                }
+                .alert("Your score", isPresented: $alert, actions: {}) {
+                    Text(computeScore().formatted())
+                }
             }
         }
         .padding()
     }
 }
 
+//MARK: - Score Engine
 extension ContentView {
     private func computeScore() -> Int{
         let difference = abs(targetValue - lround(currentValue))
